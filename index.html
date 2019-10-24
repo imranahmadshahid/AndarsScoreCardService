@@ -1,0 +1,50 @@
+<html>
+	<head>
+		<title>Score Cards</title>
+	</head>
+	<body>
+			<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" >
+			<link rel="stylesheet" href="https://cdn.datatables.net/1.10.20/css/dataTables.bootstrap4.min.css" >
+				<div class = "container">
+					<div class = "row">
+						<div class="col-md-12">
+							<div class="text-center">
+								<h1>Players</h1>
+							</div>
+							<div>
+								<h3>Add Player</h3>
+							</div>
+							<div class="row">
+								<div class="col-md-4">
+									<div class="form-group">
+										<label for="usr">Name:</label>
+										<input type="text" class="form-control" id="name">
+									</div>
+								</div>
+								<div class="col-md-4">
+									<div class="form-group">
+										<label for="usr">Score:</label>
+										<input min="1" value="1" type="number" class="form-control" id="score">
+									</div>
+								</div>
+								<div class="col-md-4">
+									<div class="form-group">
+										<div style="margin-top:32px">
+											<button class="btn btn-success" id="addplayerbtn" onclick="addEditPlayer()">Add</button>
+											<button class="btn btn-primary" onclick="clearInputs()">Clear</button>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div id="playercontents">
+							</div>
+						</div>
+					</div>
+				</div>
+				<input type="hidden" value="0" id="editId" />
+				<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+				<script src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js"></script>
+				<script src="https://cdn.datatables.net/1.10.20/js/dataTables.bootstrap4.min.js"></script>
+				<script src="players.js" type="text/javascript"></script>
+	</body>
+</html>
